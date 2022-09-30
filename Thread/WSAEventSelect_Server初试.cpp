@@ -6,7 +6,7 @@
 //#include<WS2tcpip.h>
 //#pragma comment(lib,"ws2_32.lib")
 //
-//#define MAX_EVENTS 1024
+//#define MAX_EVENTS WSA_MAXIMUM_WAIT_EVENTS //最大64个
 //#define MAX_BUF 4096
 //
 //void WSAEventSelectSocket()
@@ -111,7 +111,7 @@
 //				continue;
 //
 //			char buf[MAX_BUF] = { 0 };
-//			int nRecv = recv(sock, buf, sizeof(buf), 0);
+//			int nRecv = recv(sock, buf, sizeof(buf), 0); //把数据放到队列中，其他线程去处理数据//实现了异步的接收，但是却不能进行异步的发送 
 //			//这里实现异步，收到数据，调用
 //			if (nRecv > 0)
 //			{
