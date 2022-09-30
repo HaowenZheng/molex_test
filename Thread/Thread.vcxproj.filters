@@ -63,6 +63,18 @@
     <ClCompile Include="WSAEventSelect_Client初试.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IOCP_Server初试.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="5种创建线程模式.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="简单工厂模式.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestThread.h">
